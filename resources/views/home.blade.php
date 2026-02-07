@@ -70,7 +70,7 @@
             Monitor and analyze copra moisture content, oil percentage, and quality grades with precision. Track historical data and ensure optimal quality standards.
           </p>
           <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
-            <a href="signup.html" class="px-6 sm:px-8 py-3 sm:py-4 bg-white text-green-700 rounded-xl hover:bg-green-50 font-semibold text-base sm:text-lg shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105 inline-flex items-center justify-center">
+            <a href="{{ route('signin') }}" class="px-6 sm:px-8 py-3 sm:py-4 bg-white text-green-700 rounded-xl hover:bg-green-50 font-semibold text-base sm:text-lg shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105 inline-flex items-center justify-center">
               Start Testing Now
               <svg class="inline-block w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -389,7 +389,7 @@
           <div class="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl border border-green-100">
             <h3 class="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h3>
             <p class="text-gray-600 mb-6">Join hundreds of copra producers and traders who trust our platform for quality assessment.</p>
-            <a href="signup.html" class="inline-block px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-xl hover:from-green-700 hover:to-green-800 font-semibold shadow-lg hover:shadow-xl transition-all">
+            <a href="{{ route('signup') }}" class="inline-block px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-xl hover:from-green-700 hover:to-green-800 font-semibold shadow-lg hover:shadow-xl transition-all">
               Create Free Account
               <svg class="inline-block w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
