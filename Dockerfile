@@ -53,8 +53,10 @@ RUN docker-php-ext-install pdo pdo_mysql mbstring zip exif pcntl bcmath gd
 # Copy Laravel files + vendor from builder stage
 COPY --from=builder /var/www/html /var/www/html
 
-# Set permissions
-RUN chown -R www-data:www-data storage bootstrap/cache
+# Create SQLite database file if using SQLite
+RUN mkdir -p database && \
+    touch database/database.sqlite && \
+    chown -R www-data:www-data storage bootstrap/cache database
 
 # Copy Nginx config
 COPY ./nginx.conf /etc/nginx/sites-available/default
