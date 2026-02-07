@@ -64,5 +64,5 @@ COPY ./nginx.conf /etc/nginx/sites-available/default
 # Expose Render HTTP port
 EXPOSE 8080
 
-# Start PHP-FPM + Nginx
-CMD ["sh", "-c", "php-fpm -D && nginx -g 'daemon off;'"]
+# Run migrations + start PHP-FPM + Nginx
+CMD ["sh", "-c", "php artisan migrate --force && php-fpm -D && nginx -g 'daemon off;'"]
